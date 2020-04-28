@@ -1,0 +1,298 @@
+/*--------------------------------------------------
+Project Name: Tiny One
+Technology: HTML5, CSS3, Bootstrap 4;
+Author: ImAmUdDiN
+Author URL: https://about.me/imamcu07
+
+-----------------------------------------------------/*
+
+=======================================
+Table Of Contents
+    ----------
+01: Header Section
+    - Navigation
+    - Slider
+02: Features
+    - Title
+    - Top Row
+    - Bottom Row
+ 03: Footer 
+    - Footer Title   
+    - Subscribe Form
+    - Social Media
+    - Address
+    - Footer Links
+========================================*/
+
+
+/*--------Initialization-----------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+/*---------------Common Classes--------------*/
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #010101;
+}
+
+/*===================================
+-----------Header Section--------
+=====================================*/
+
+.header_area {
+    background-color: #fcdb00;
+    height: 100vh;
+}
+.header_area .navbar {
+    padding-top: 45px;
+}
+
+/*------Navigation----------*/
+.navbar-light .navbar-nav .nav-link {
+    color: #010101;
+    font-size: 22px;
+    font-weight: 700;
+    padding-left: 60px;
+    text-transform: capitalize;
+}
+/*----------Slider Info--------*/
+.slider_info {
+    max-width: 400px;
+    padding-top: 100px;
+}
+
+.slider_info h3 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 20px;
+}
+.slider_info p {
+    font-size: 16px;
+}
+.system_icons ul {
+    margin: 0;
+    padding: 0;
+   
+}
+.system_icons ul li {
+    list-style: none;
+    float: left;
+    padding: 20px;
+    font-size: 42px;  
+}
+/* ---------Slider Images------ */
+
+.slider_img {
+    position: relative;
+}
+
+.slider_img img {
+    padding-top: 30px;
+    padding-left: 80px;
+    padding-bottom: 120px;
+}
+
+/*---------Slider Indicators------*/
+.carousel-indicators  {
+    padding-bottom: 15px;
+}
+.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;   
+}
+.carousel-indicators li:hover {
+    background-color: #010101;
+}
+.carousel-indicators .active {
+    background-color: #010101;
+}
+
+/*===================================
+-----------Features Area--------
+=====================================*/
+.feature_heading {
+    padding-top: 115px;
+    text-align: center;
+}
+.feature_heading  p{
+    padding-top: 20px;
+    margin-bottom: 70px;
+}
+.feature_icon {
+    margin-left: 30px;
+}
+.feature_icon i {
+ font-size: 40px;
+ padding-top: 2px;
+}
+.feture_text  {
+    padding-left: 2px;
+}
+.feture_text h4 {
+    color: #010101;
+    font-size: 22px;
+}
+.feture_text p {
+    color: #898989;
+    font-size: 16px;
+}
+.top_row {
+    padding-bottom:30px;
+}
+.bottom_row {
+    padding-top: 30px;
+    padding-bottom:150px;
+}
+.top_row .row .col-md-4, 
+.bottom_row .row .col-md-4 { 
+   transition-delay: 0.6s;
+   transition-duration: 0.3;
+   cursor: pointer;
+}
+.top_row .row .col-md-4:hover, 
+.bottom_row .row .col-md-4:hover {
+    border: 1px solid rgba(199, 197, 197, 0.5);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+/*===================================
+-----------Footer Area--------
+=====================================*/
+
+.footer_main {
+    background-color: #010101;
+    text-align: center;
+}
+.footer_title h2 {
+    color:#fcdb00;
+    padding-top: 90px;
+}
+.footer_title p {
+    color: #898989;
+    font-size: 20px;
+    padding: 10px;
+}
+.email_box input {
+    padding: 23px 25px;
+    color: #898989;
+}
+.submit_btn .btn {
+    background-color: #fcdb00;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 35px;
+    text-transform: uppercase;
+}
+
+/*---Social Media---*/
+.social_meadia {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+    padding-bottom: 115px;
+}
+.social_meadia li {
+    list-style: none;
+}
+.social_meadia li a {
+    display: block;
+    background-color: #fcdb00;
+    color: #000000;
+    padding:0  18px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 36px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+.social_meadia li a:hover {
+  color: #fcdb00;
+  background-color: #000000;
+  transform: scale(1.1) rotate(360deg);
+  -webkit-transform: scale(1.1) rotate(360deg);
+  -moz-transform: scale(1.1) rotate(360deg);
+  -ms-transform: scale(1.1) rotate(360deg);
+  -o-transform: scale(1.1) rotate(360deg);
+}
+.address {
+    color: #fff;
+    font-size: 16px;
+    text-align: left;
+}
+.address p{
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+}
+.mail_tel a{
+    display: inline-block;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.mail_tel a:hover{
+    text-decoration: none;
+    color: #fcdb00;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.mail_tel a:last-child{
+   font-weight: 700;
+}
+.footer_links {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 120px;
+}
+.footer_links li {
+    list-style: none;
+    text-align-last: left;
+}
+.footer_links li a {
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.footer_links li a:hover {
+    text-decoration: none;
+    color: #fcdb00;
+}
+.footer_links li a:hover  .footer_links li a i{
+    text-decoration: none;
+    color: #fcdb00;
+}
+
+/*------------The End --------*/

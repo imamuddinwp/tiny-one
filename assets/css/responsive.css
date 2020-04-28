@@ -1,0 +1,18 @@
+@media (max-width: 1199px) {
+    .slider_img img {
+        padding-left: 30px;
+
+    }
+  
+}
+@media (max-width: 991px) {
+    .slider_img img {
+       margin-left: -80px;
+
+    }
+    .slider_info {
+        max-width: 80%;
+        padding-top: 100px;
+    }
+}
+
